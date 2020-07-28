@@ -1,0 +1,179 @@
+executing instruction: PUSH (Imm 3)
+ax=0 bx=0 cx=0 dx=0 sp=1 pc=1
+executing instruction: PUSH (Imm 1)
+ax=0 bx=0 cx=0 dx=0 sp=2 pc=2
+executing instruction: PUSH (Imm 4)
+ax=0 bx=0 cx=0 dx=0 sp=3 pc=3
+executing instruction: PUSH (Imm 8)
+ax=0 bx=0 cx=0 dx=0 sp=4 pc=4
+executing instruction: PUSH (Imm 0)
+ax=0 bx=0 cx=0 dx=0 sp=5 pc=5
+executing instruction: PUSH (Imm 5)
+ax=0 bx=0 cx=0 dx=0 sp=6 pc=6
+executing instruction: PUSH (Imm 6)
+ax=0 bx=0 cx=0 dx=0 sp=7 pc=7
+executing instruction: PUSH (Imm 9)
+ax=0 bx=0 cx=0 dx=0 sp=8 pc=8
+executing instruction: PUSH (Imm 2)
+ax=0 bx=0 cx=0 dx=0 sp=9 pc=9
+executing instruction: PUSH (Imm 7)
+ax=0 bx=0 cx=0 dx=0 sp=10 pc=10
+executing instruction: MOV (Imm 0,Reg "bx")
+ax=0 bx=0 cx=0 dx=0 sp=10 pc=11
+executing instruction: MOV (Mem (Reg "bx"),Reg "ax")
+ax=3 bx=0 cx=0 dx=0 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=3 bx=1 cx=1 dx=1 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=3 bx=1 cx=1 dx=1 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=3 bx=1 cx=-9 dx=-9 sp=10 pc=15
+executing instruction: JZ 22
+ax=3 bx=1 cx=-9 dx=-9 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=3 bx=1 cx=1 dx=-9 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=3 bx=1 cx=-2 dx=-9 sp=10 pc=18
+executing instruction: JN 12
+ax=3 bx=1 cx=-2 dx=-9 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=3 bx=2 cx=2 dx=2 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=3 bx=2 cx=2 dx=2 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=3 bx=2 cx=-8 dx=-8 sp=10 pc=15
+executing instruction: JZ 22
+ax=3 bx=2 cx=-8 dx=-8 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=3 bx=2 cx=4 dx=-8 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=3 bx=2 cx=1 dx=-8 sp=10 pc=18
+executing instruction: JN 12
+ax=3 bx=2 cx=1 dx=-8 sp=10 pc=19
+executing instruction: MOV (Mem (Reg "bx"),Reg "ax")
+ax=4 bx=2 cx=1 dx=-8 sp=10 pc=20
+executing instruction: MOV (Imm 0,Reg "cx")
+ax=4 bx=2 cx=0 dx=-8 sp=10 pc=21
+executing instruction: JZ 12
+ax=4 bx=2 cx=0 dx=-8 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=4 bx=3 cx=3 dx=3 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=4 bx=3 cx=3 dx=3 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=4 bx=3 cx=-7 dx=-7 sp=10 pc=15
+executing instruction: JZ 22
+ax=4 bx=3 cx=-7 dx=-7 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=4 bx=3 cx=8 dx=-7 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=4 bx=3 cx=4 dx=-7 sp=10 pc=18
+executing instruction: JN 12
+ax=4 bx=3 cx=4 dx=-7 sp=10 pc=19
+executing instruction: MOV (Mem (Reg "bx"),Reg "ax")
+ax=8 bx=3 cx=4 dx=-7 sp=10 pc=20
+executing instruction: MOV (Imm 0,Reg "cx")
+ax=8 bx=3 cx=0 dx=-7 sp=10 pc=21
+executing instruction: JZ 12
+ax=8 bx=3 cx=0 dx=-7 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=8 bx=4 cx=4 dx=4 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=8 bx=4 cx=4 dx=4 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=8 bx=4 cx=-6 dx=-6 sp=10 pc=15
+executing instruction: JZ 22
+ax=8 bx=4 cx=-6 dx=-6 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=8 bx=4 cx=0 dx=-6 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=8 bx=4 cx=-8 dx=-6 sp=10 pc=18
+executing instruction: JN 12
+ax=8 bx=4 cx=-8 dx=-6 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=8 bx=5 cx=5 dx=5 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=8 bx=5 cx=5 dx=5 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=8 bx=5 cx=-5 dx=-5 sp=10 pc=15
+executing instruction: JZ 22
+ax=8 bx=5 cx=-5 dx=-5 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=8 bx=5 cx=5 dx=-5 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=8 bx=5 cx=-3 dx=-5 sp=10 pc=18
+executing instruction: JN 12
+ax=8 bx=5 cx=-3 dx=-5 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=8 bx=6 cx=6 dx=6 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=8 bx=6 cx=6 dx=6 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=8 bx=6 cx=-4 dx=-4 sp=10 pc=15
+executing instruction: JZ 22
+ax=8 bx=6 cx=-4 dx=-4 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=8 bx=6 cx=6 dx=-4 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=8 bx=6 cx=-2 dx=-4 sp=10 pc=18
+executing instruction: JN 12
+ax=8 bx=6 cx=-2 dx=-4 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=8 bx=7 cx=7 dx=7 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=8 bx=7 cx=7 dx=7 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=8 bx=7 cx=-3 dx=-3 sp=10 pc=15
+executing instruction: JZ 22
+ax=8 bx=7 cx=-3 dx=-3 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=8 bx=7 cx=9 dx=-3 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=8 bx=7 cx=1 dx=-3 sp=10 pc=18
+executing instruction: JN 12
+ax=8 bx=7 cx=1 dx=-3 sp=10 pc=19
+executing instruction: MOV (Mem (Reg "bx"),Reg "ax")
+ax=9 bx=7 cx=1 dx=-3 sp=10 pc=20
+executing instruction: MOV (Imm 0,Reg "cx")
+ax=9 bx=7 cx=0 dx=-3 sp=10 pc=21
+executing instruction: JZ 12
+ax=9 bx=7 cx=0 dx=-3 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=9 bx=8 cx=8 dx=8 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=9 bx=8 cx=8 dx=8 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=9 bx=8 cx=-2 dx=-2 sp=10 pc=15
+executing instruction: JZ 22
+ax=9 bx=8 cx=-2 dx=-2 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=9 bx=8 cx=2 dx=-2 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=9 bx=8 cx=-7 dx=-2 sp=10 pc=18
+executing instruction: JN 12
+ax=9 bx=8 cx=-7 dx=-2 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=9 bx=9 cx=9 dx=9 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=9 bx=9 cx=9 dx=9 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=9 bx=9 cx=-1 dx=-1 sp=10 pc=15
+executing instruction: JZ 22
+ax=9 bx=9 cx=-1 dx=-1 sp=10 pc=16
+executing instruction: MOV (Mem (Reg "bx"),Reg "cx")
+ax=9 bx=9 cx=7 dx=-1 sp=10 pc=17
+executing instruction: ALU ("sub", Reg "ax", Reg "cx")
+ax=9 bx=9 cx=-2 dx=-1 sp=10 pc=18
+executing instruction: JN 12
+ax=9 bx=9 cx=-2 dx=-1 sp=10 pc=12
+executing instruction: ALU ("add", Imm 1, Reg "bx")
+ax=9 bx=10 cx=10 dx=10 sp=10 pc=13
+executing instruction: MOV (Reg "bx",Reg "cx")
+ax=9 bx=10 cx=10 dx=10 sp=10 pc=14
+executing instruction: ALU ("sub", Imm 10, Reg "cx")
+ax=9 bx=10 cx=0 dx=0 sp=10 pc=15
+executing instruction: JZ 22
+ax=9 bx=10 cx=0 dx=0 sp=10 pc=22
+executing instruction: PUSH (Reg "ax")
+ax=9 bx=10 cx=0 dx=0 sp=11 pc=23
+top of stack holds value 9

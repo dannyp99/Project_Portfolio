@@ -1,0 +1,2703 @@
+let e=lambda n.(if(n eq 0) 1 else (2*(e (n-1)))):(e 11)Enter expression: parsing [] with lookahead Sym "let"
+parsing [Sym "let"] with lookahead Var "e"
+parsing [Var "e"; Sym "let"] with lookahead Sym "="
+parsing [Sym "="; Var "e"; Sym "let"] with lookahead Sym "lambda"
+parsing [Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Var "n"
+parsing [Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym "."
+parsing [Sym "."; Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym "if"
+parsing [Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Var "n"
+parsing [Var "n"; Sym "("; Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "="; Var "e";
+ Sym "let"] with lookahead Sym "eq"
+parsing [Sym "eq"; Var "n"; Sym "("; Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "=";
+ Var "e"; Sym "let"] with lookahead Val 0
+parsing [Val 0; Sym "eq"; Var "n"; Sym "("; Sym "if"; Sym "."; Var "n"; Sym "lambda";
+ Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Binop ("eq", Var "n", Val 0); Sym "("; Sym "if"; Sym "."; Var "n"; Sym "lambda";
+ Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("eq", Var "n", Val 0); Sym "("; Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Val 1
+parsing [Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "=";
+ Var "e"; Sym "let"] with lookahead Val 1
+parsing [Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda";
+ Sym "="; Var "e"; Sym "let"] with lookahead Sym "else"
+parsing [Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym ".";
+ Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Val 2
+parsing [Val 2; Sym "("; Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if";
+ Sym "."; Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym "*"
+parsing [Sym "*"; Val 2; Sym "("; Sym "else"; Val 1; Binop ("eq", Var "n", Val 0);
+ Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym "*"; Val 2; Sym "("; Sym "else"; Val 1;
+ Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "=";
+ Var "e"; Sym "let"] with lookahead Var "e"
+parsing [Var "e"; Sym "("; Sym "*"; Val 2; Sym "("; Sym "else"; Val 1;
+ Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "=";
+ Var "e"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Var "e"; Sym "("; Sym "*"; Val 2; Sym "("; Sym "else"; Val 1;
+ Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "=";
+ Var "e"; Sym "let"] with lookahead Var "n"
+parsing [Var "n"; Sym "("; Var "e"; Sym "("; Sym "*"; Val 2; Sym "("; Sym "else"; Val 1;
+ Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "=";
+ Var "e"; Sym "let"] with lookahead Sym "-"
+parsing [Sym "-"; Var "n"; Sym "("; Var "e"; Sym "("; Sym "*"; Val 2; Sym "(";
+ Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Val 1
+parsing [Val 1; Sym "-"; Var "n"; Sym "("; Var "e"; Sym "("; Sym "*"; Val 2; Sym "(";
+ Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Binop ("-", Var "n", Val 1); Sym "("; Var "e"; Sym "("; Sym "*"; Val 2; Sym "(";
+ Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("-", Var "n", Val 1); Sym "("; Var "e"; Sym "("; Sym "*"; Val 2;
+ Sym "("; Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym ".";
+ Var "n"; Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Binop ("-", Var "n", Val 1); Var "e"; Sym "("; Sym "*"; Val 2; Sym "(";
+ Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("-", Var "n", Val 1); Var "e"; Sym "("; Sym "*"; Val 2; Sym "(";
+ Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [App ("e",Binop ("-", Var "n", Val 1)); Sym "*"; Val 2; Sym "("; Sym "else";
+ Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda";
+ Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))); Sym "("; Sym "else";
+ Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda";
+ Sym "="; Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))); Sym "(";
+ Sym "else"; Val 1; Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym ":"
+parsing [Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))); Sym "else"; Val 1;
+ Binop ("eq", Var "n", Val 0); Sym "if"; Sym "."; Var "n"; Sym "lambda"; Sym "=";
+ Var "e"; Sym "let"] with lookahead Sym ":"
+parsing [Ternop
+   ("if",Binop ("eq", Var "n", Val 0),Val 1,
+    Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))); Sym "."; Var "n";
+ Sym "lambda"; Sym "="; Var "e"; Sym "let"] with lookahead Sym ":"
+parsing [Lambda
+   ("n",
+    Ternop
+      ("if",Binop ("eq", Var "n", Val 0),Val 1,
+       Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))); Sym "=";
+ Var "e"; Sym "let"] with lookahead Sym ":"
+parsing [Sym ":";
+ Lambda
+   ("n",
+    Ternop
+      ("if",Binop ("eq", Var "n", Val 0),Val 1,
+       Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))); Sym "=";
+ Var "e"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym ":";
+ Lambda
+   ("n",
+    Ternop
+      ("if",Binop ("eq", Var "n", Val 0),Val 1,
+       Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))); Sym "=";
+ Var "e"; Sym "let"] with lookahead Var "e"
+parsing [Var "e"; Sym "("; Sym ":";
+ Lambda
+   ("n",
+    Ternop
+      ("if",Binop ("eq", Var "n", Val 0),Val 1,
+       Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))); Sym "=";
+ Var "e"; Sym "let"] with lookahead Val 11
+parsing [Val 11; Var "e"; Sym "("; Sym ":";
+ Lambda
+   ("n",
+    Ternop
+      ("if",Binop ("eq", Var "n", Val 0),Val 1,
+       Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))); Sym "=";
+ Var "e"; Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Val 11; Var "e"; Sym "("; Sym ":";
+ Lambda
+   ("n",
+    Ternop
+      ("if",Binop ("eq", Var "n", Val 0),Val 1,
+       Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))); Sym "=";
+ Var "e"; Sym "let"] with lookahead EOF
+parsing [App ("e",Val 11); Sym ":";
+ Lambda
+   ("n",
+    Ternop
+      ("if",Binop ("eq", Var "n", Val 0),Val 1,
+       Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))); Sym "=";
+ Var "e"; Sym "let"] with lookahead EOF
+parsing [Letexp
+   ("e",
+    Lambda
+      ("n",
+       Ternop
+         ("if",Binop ("eq", Var "n", Val 0),Val 1,
+          Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+    App ("e",Val 11))] with lookahead EOF
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+  parse returned expression Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11))
+evaluating Letexp
+  ("e",
+   Lambda
+     ("n",
+      Ternop
+        ("if",Binop ("eq", Var "n", Val 0),Val 1,
+         Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))),
+   App ("e",Val 11)) under env []
+evaluating App ("e",Val 11) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Val 11)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));})]
+evaluating Val 11 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));})]
+  eval returned 11
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+  eval returned 11
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+  eval returned 11
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 11;})]
+  eval returned 1
+  eval returned 10
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+  eval returned 10
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+  eval returned 10
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 10;})]
+  eval returned 1
+  eval returned 9
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+  eval returned 9
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+  eval returned 9
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 9;})]
+  eval returned 1
+  eval returned 8
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+  eval returned 8
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+  eval returned 8
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 8;})]
+  eval returned 1
+  eval returned 7
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+  eval returned 7
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+  eval returned 7
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 7;})]
+  eval returned 1
+  eval returned 6
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+  eval returned 6
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+  eval returned 6
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 6;})]
+  eval returned 1
+  eval returned 5
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+  eval returned 5
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+  eval returned 5
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 5;})]
+  eval returned 1
+  eval returned 4
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+  eval returned 4
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+  eval returned 4
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 4;})]
+  eval returned 1
+  eval returned 3
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+  eval returned 3
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+  eval returned 3
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 3;})]
+  eval returned 1
+  eval returned 2
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+  eval returned 2
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+  eval returned 2
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 2;})]
+  eval returned 1
+  eval returned 1
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+  eval returned 1
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+  eval returned 0
+  eval returned 0
+evaluating Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+evaluating Val 2 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+  eval returned 2
+evaluating App ("e",Binop ("-", Var "n", Val 1)) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([],
+      Lambda
+        ("n",
+         Ternop
+           ("if",Binop ("eq", Var "n", Val 0),Val 1,
+            Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))))),
+   App ("e",Binop ("-", Var "n", Val 1))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+evaluating Binop ("-", Var "n", Val 1) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+  eval returned 1
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 1;})]
+  eval returned 1
+  eval returned 0
+evaluating Ternop
+  ("if",Binop ("eq", Var "n", Val 0),Val 1,
+   Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1)))) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 0;})]
+evaluating Binop ("eq", Var "n", Val 0) under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 0;})]
+evaluating Var "n" under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 0;})]
+  eval returned 0
+evaluating Val 0 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 0;})]
+  eval returned 0
+  eval returned 1
+evaluating Val 1 under env [("e",
+  {contents =
+    Closure
+      ([],
+       Lambda
+         ("n",
+          Ternop
+            ("if",Binop ("eq", Var "n", Val 0),Val 1,
+             Binop ("*", Val 2, App ("e",Binop ("-", Var "n", Val 1))))));});
+ ("n", {contents = Val 0;})]
+  eval returned 1
+  eval returned 1
+  eval returned 1
+  eval returned 1
+  eval returned 2
+  eval returned 2
+  eval returned 2
+  eval returned 2
+  eval returned 4
+  eval returned 4
+  eval returned 4
+  eval returned 4
+  eval returned 8
+  eval returned 8
+  eval returned 8
+  eval returned 8
+  eval returned 16
+  eval returned 16
+  eval returned 16
+  eval returned 16
+  eval returned 32
+  eval returned 32
+  eval returned 32
+  eval returned 32
+  eval returned 64
+  eval returned 64
+  eval returned 64
+  eval returned 64
+  eval returned 128
+  eval returned 128
+  eval returned 128
+  eval returned 128
+  eval returned 256
+  eval returned 256
+  eval returned 256
+  eval returned 256
+  eval returned 512
+  eval returned 512
+  eval returned 512
+  eval returned 512
+  eval returned 1024
+  eval returned 1024
+  eval returned 1024
+  eval returned 1024
+  eval returned 2048
+  eval returned 2048
+  eval returned 2048
+  eval returned 2048
+  eval returned 2048
+
+Value of let e=lambda n.if (n eq 0) 1 else (2*(e (n-1))): (e 11)  = 2048
+Enter expression: parsing [] with lookahead Sym "let"
+parsing [Sym "let"] with lookahead Var "pi"
+parsing [Var "pi"; Sym "let"] with lookahead Sym "="
+parsing [Sym "="; Var "pi"; Sym "let"] with lookahead Val 31416
+parsing [Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym ":"
+parsing [Sym ":"; Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym "let"
+parsing [Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Var "area"
+parsing [Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym "="
+parsing [Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym "lambda"
+parsing [Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "=";
+ Var "pi"; Sym "let"] with lookahead Var "r"
+parsing [Var "r"; Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416;
+ Sym "="; Var "pi"; Sym "let"] with lookahead Sym "."
+parsing [Sym "."; Var "r"; Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":";
+ Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym "."; Var "r"; Sym "lambda"; Sym "="; Var "area"; Sym "let";
+ Sym ":"; Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Var "pi"
+parsing [Var "pi"; Sym "("; Sym "."; Var "r"; Sym "lambda"; Sym "="; Var "area";
+ Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym "*"
+parsing [Sym "*"; Var "pi"; Sym "("; Sym "."; Var "r"; Sym "lambda"; Sym "="; Var "area";
+ Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Var "r"
+parsing [Var "r"; Sym "*"; Var "pi"; Sym "("; Sym "."; Var "r"; Sym "lambda"; Sym "=";
+ Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym "*"
+parsing [Binop ("*", Var "pi", Var "r"); Sym "("; Sym "."; Var "r"; Sym "lambda";
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym "*"
+parsing [Sym "*"; Binop ("*", Var "pi", Var "r"); Sym "("; Sym "."; Var "r";
+ Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "=";
+ Var "pi"; Sym "let"] with lookahead Var "r"
+parsing [Var "r"; Sym "*"; Binop ("*", Var "pi", Var "r"); Sym "("; Sym "."; Var "r";
+ Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "=";
+ Var "pi"; Sym "let"] with lookahead Sym ")"
+parsing [Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"); Sym "("; Sym "."; Var "r";
+ Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "=";
+ Var "pi"; Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"); Sym "("; Sym ".";
+ Var "r"; Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416;
+ Sym "="; Var "pi"; Sym "let"] with lookahead Sym "/"
+parsing [Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"); Sym "."; Var "r";
+ Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "=";
+ Var "pi"; Sym "let"] with lookahead Sym "/"
+parsing [Sym "/"; Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"); Sym "."; Var "r";
+ Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "=";
+ Var "pi"; Sym "let"] with lookahead Val 10000
+parsing [Val 10000; Sym "/"; Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r");
+ Sym "."; Var "r"; Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":";
+ Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym ":"
+parsing [Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000);
+ Sym "."; Var "r"; Sym "lambda"; Sym "="; Var "area"; Sym "let"; Sym ":";
+ Val 31416; Sym "="; Var "pi"; Sym "let"] with lookahead Sym ":"
+parsing [Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym ":"
+parsing [Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym "let"
+parsing [Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Var "pi"
+parsing [Var "pi"; Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym "="
+parsing [Sym "="; Var "pi"; Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Val 0
+parsing [Val 0; Sym "="; Var "pi"; Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym ":"
+parsing [Sym ":"; Val 0; Sym "="; Var "pi"; Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym ":"; Val 0; Sym "="; Var "pi"; Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Var "area"
+parsing [Var "area"; Sym "("; Sym ":"; Val 0; Sym "="; Var "pi"; Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Val 51
+parsing [Val 51; Var "area"; Sym "("; Sym ":"; Val 0; Sym "="; Var "pi"; Sym "let";
+ Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Val 51; Var "area"; Sym "("; Sym ":"; Val 0; Sym "="; Var "pi";
+ Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead EOF
+parsing [App ("area",Val 51); Sym ":"; Val 0; Sym "="; Var "pi"; Sym "let"; Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead EOF
+parsing [Letexp ("pi",Val 0,App ("area",Val 51)); Sym ":";
+ Lambda
+   ("r",
+    Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000));
+ Sym "="; Var "area"; Sym "let"; Sym ":"; Val 31416; Sym "="; Var "pi";
+ Sym "let"] with lookahead EOF
+parsing [Letexp
+   ("area",
+    Lambda
+      ("r",
+       Binop
+         ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+    Letexp ("pi",Val 0,App ("area",Val 51))); Sym ":"; Val 31416; Sym "=";
+ Var "pi"; Sym "let"] with lookahead EOF
+parsing [Letexp
+   ("pi",Val 31416,
+    Letexp
+      ("area",
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)),Letexp ("pi",Val 0,App ("area",Val 51))))] with lookahead EOF
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+  parse returned expression Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51))))
+evaluating Letexp
+  ("pi",Val 31416,
+   Letexp
+     ("area",
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+      Letexp ("pi",Val 0,App ("area",Val 51)))) under env []
+evaluating Val 31416 under env []
+  eval returned 31416
+evaluating Letexp
+  ("area",
+   Lambda
+     ("r",
+      Binop
+        ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000)),
+   Letexp ("pi",Val 0,App ("area",Val 51))) under env [("pi", {contents = Val 31416;})]
+evaluating Letexp ("pi",Val 0,App ("area",Val 51)) under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("pi", {contents = Val 31416;})]
+evaluating Val 0 under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("pi", {contents = Val 31416;})]
+  eval returned 0
+evaluating App ("area",Val 51) under env [("pi", {contents = Val 0;});
+ ("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("pi", {contents = Val 31416;})]
+evaluating Binop
+  ("lambda",
+   Closure
+     ([("pi", {contents = Val 31416;})],
+      Lambda
+        ("r",
+         Binop
+           ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000))),
+   App ("area",Val 51)) under env [("pi", {contents = Val 0;});
+ ("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("pi", {contents = Val 31416;})]
+evaluating Val 51 under env [("pi", {contents = Val 0;});
+ ("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("pi", {contents = Val 31416;})]
+  eval returned 51
+evaluating Binop ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"), Val 10000) under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("r", {contents = Val 51;});
+ ("pi", {contents = Val 31416;})]
+evaluating Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r") under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("r", {contents = Val 51;});
+ ("pi", {contents = Val 31416;})]
+evaluating Binop ("*", Var "pi", Var "r") under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("r", {contents = Val 51;});
+ ("pi", {contents = Val 31416;})]
+evaluating Var "pi" under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("r", {contents = Val 51;});
+ ("pi", {contents = Val 31416;})]
+  eval returned 31416
+evaluating Var "r" under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("r", {contents = Val 51;});
+ ("pi", {contents = Val 31416;})]
+  eval returned 51
+  eval returned 1602216
+evaluating Var "r" under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("r", {contents = Val 51;});
+ ("pi", {contents = Val 31416;})]
+  eval returned 51
+  eval returned 81713016
+evaluating Val 10000 under env [("area",
+  {contents =
+    Closure
+      ([("pi", {contents = Val 31416;})],
+       Lambda
+         ("r",
+          Binop
+            ("/", Binop ("*", Binop ("*", Var "pi", Var "r"), Var "r"),
+             Val 10000)));}); ("r", {contents = Val 51;});
+ ("pi", {contents = Val 31416;})]
+  eval returned 10000
+  eval returned 8171
+  eval returned 8171
+  eval returned 8171
+  eval returned 8171
+  eval returned 8171
+  eval returned 8171
+
+Value of let pi=31416:let area=lambda r.(pi*r*r)/10000:let pi=0: (area 51) = 8171

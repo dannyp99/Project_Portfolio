@@ -1,0 +1,12 @@
+# fills first 15 slots in memory with fibonacci sequence
+# ax always holds next fib number to be placed in mem
+push 1
+mov 1 ax
+mov 0 bx
+push ax
+mov [bx] dx
+add dx ax
+add 1 bx
+mov 14 cx
+sub bx cx
+jnz 3

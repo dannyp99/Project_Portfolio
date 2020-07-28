@@ -1,0 +1,26 @@
+push 3
+push 1
+push 1
+pop bx
+pop ax
+add bx ax
+push ax
+push 1
+pop bx
+pop ax
+add bx ax
+push ax
+pop bx
+pop cx
+sub bx cx
+jnz 18
+push 1
+jnz 19
+push 0
+pop cx
+jz 25
+push 10
+mov 0 cx
+jz 24
+push 21
+nop

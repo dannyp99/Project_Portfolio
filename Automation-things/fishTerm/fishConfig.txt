@@ -1,0 +1,67 @@
+set -g fish_user_paths "/usr/local/opt/gettext/bin" $fish_user_paths
+
+#alias and abbreviations
+thefuck --alias | source 
+alias l="ls"
+alias gits="git status"
+alias gitd="git diff"
+abbr -a -- - 'cd -'
+
+function freset
+	tput reset
+end
+
+function mkcd
+	mkdir "$argv[1]"; cd "$argv[1]"
+end
+
+function append --no-scope-shadowing
+    if test (count $argv) -ne 2
+        echo append: Expected two arguments, (count $argv) received.
+        return 1
+    end
+    set -l __fish_value $$argv[1]
+    set $argv[1] "$__fish_value$argv[2]"
+end
+
+function up
+	set up 'cd '
+	if count $argv > /dev/null 
+		for x in (seq "$argv[1]")
+			set up $up'../'
+		end
+	else
+		set up $up'../'
+	end
+	eval $up
+end
+
+function almightypush
+	if test (count $argv) = 1
+		git add -A
+		git commit -m "$argv[1]"
+		git push origin HEAD
+		open "https://www.youtube.com/watch?v=aYAhC8zn42E"
+	else
+		echo "You need to pass a commit message in quotes \"\" as one argument"
+	end
+end
+
+function robi
+	if test -e /dev/cu.SLAB_USBtoUART
+		eval 'screen /dev/cu.SLAB_USBtoUART 115200'
+	else
+		echo "Robi not found on system"
+	end
+end
+
+function kiryu --on-event fish_postexec
+	if test $status = 127
+		if not test -e $HOME/Downloads/kiryu.mp4
+			youtube-dl "https://www.youtube.com/watch?v=YcAHHKY3Y0I" -o '$HOME/Downloads/kiryu.%(ext)s'
+		end
+		mpv $HOME/Downloads/kiryu.mp4 --length=2
+	else
+		:
+	end
+end

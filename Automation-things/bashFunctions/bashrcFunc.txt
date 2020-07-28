@@ -1,0 +1,46 @@
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+    source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+fi
+if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
+    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+fi
+
+function mkcd(){
+	mkdir "$1"; cd "$1"
+}
+
+function up(){
+	back="cd "
+	if [ "$1" == "" ]; then
+		back+="../"
+	else
+		for ((i=0; i < "$1"; i++)) do
+			back+="../"	
+		done
+	fi
+	eval "$back"
+}
+
+function almightypush(){
+	if [ "$#" -eq 1 ];then
+		git add -A
+		git commit -m "$1"
+		git push origin HEAD
+	else
+		echo "You need to pass a commit message in quotes \"\" as one argument"
+	fi
+}
+function kiryu(){
+	ret=$?
+	if [[ $ret -eq 127 ]] || [[ $ret -eq 1 ]];then 
+		if [[ ! -f "$HOME/Downloads/kiryu.mp4" ]];then
+			youtube-dl "https://www.youtube.com/watch?v=YcAHHKY3Y0I" -o '$HOME/Downloads/kiryu.%(ext)s'
+		fi
+		mpv $HOME/Downloads/kiryu.mp4 --length=2 --really-quiet
+	else 
+		:
+	fi
+}
+#use unset PROMPT_COMMAND to undo function call.
+PROMPT_COMMAND="kiryu"

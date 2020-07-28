@@ -1,0 +1,256 @@
+***************************************** TEST 6 *******************************************************************
+Enter expression: let x=(3 eq (1+2)): if x 10 else 20
+parsing [] with lookahead Sym "let"
+parsing [Sym "let"] with lookahead Var "x"
+parsing [Var "x"; Sym "let"] with lookahead Sym "="
+parsing [Sym "="; Var "x"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym "="; Var "x"; Sym "let"] with lookahead Val 3
+parsing [Val 3; Sym "("; Sym "="; Var "x"; Sym "let"] with lookahead Sym "eq"
+parsing [Sym "eq"; Val 3; Sym "("; Sym "="; Var "x"; Sym "let"] with lookahead Sym "("
+parsing [Sym "("; Sym "eq"; Val 3; Sym "("; Sym "="; Var "x"; Sym "let"] with lookahead Val 1
+parsing [Val 1; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "="; Var "x"; Sym "let"] with lookahead Sym "+"
+parsing [Sym "+"; Val 1; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "="; Var "x"; Sym "let"] with lookahead Val 2
+parsing [Val 2; Sym "+"; Val 1; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "="; Var "x";
+ Sym "let"] with lookahead Sym ")"
+parsing [Binop ("+", Val 1, Val 2); Sym "("; Sym "eq"; Val 3; Sym "("; Sym "="; Var "x";
+ Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("+", Val 1, Val 2); Sym "("; Sym "eq"; Val 3; Sym "("; Sym "=";
+ Var "x"; Sym "let"] with lookahead Sym ")"
+parsing [Binop ("+", Val 1, Val 2); Sym "eq"; Val 3; Sym "("; Sym "="; Var "x";
+ Sym "let"] with lookahead Sym ")"
+parsing [Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "("; Sym "="; Var "x";
+ Sym "let"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "("; Sym "=";
+ Var "x"; Sym "let"] with lookahead Sym ":"
+parsing [Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "="; Var "x"; Sym "let"] with lookahead Sym ":"
+parsing [Sym ":"; Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "="; Var "x";
+ Sym "let"] with lookahead Sym "if"
+parsing [Sym "if"; Sym ":"; Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "=";
+ Var "x"; Sym "let"] with lookahead Var "x"
+parsing [Var "x"; Sym "if"; Sym ":"; Binop ("eq", Val 3, Binop ("+", Val 1, Val 2));
+ Sym "="; Var "x"; Sym "let"] with lookahead Val 10
+parsing [Val 10; Var "x"; Sym "if"; Sym ":";
+ Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "="; Var "x"; Sym "let"] with lookahead Sym "else"
+parsing [Sym "else"; Val 10; Var "x"; Sym "if"; Sym ":";
+ Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "="; Var "x"; Sym "let"] with lookahead Val 20
+parsing [Val 20; Sym "else"; Val 10; Var "x"; Sym "if"; Sym ":";
+ Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "="; Var "x"; Sym "let"] with lookahead EOF
+parsing [Ternop ("if",Var "x",Val 10,Val 20); Sym ":";
+ Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)); Sym "="; Var "x"; Sym "let"] with lookahead EOF
+parsing [Letexp
+   ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+    Ternop ("if",Var "x",Val 10,Val 20))] with lookahead EOF
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+  parse returned expression Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20))
+evaluating Letexp
+  ("x",Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)),
+   Ternop ("if",Var "x",Val 10,Val 20)) under env []
+evaluating Binop ("eq", Val 3, Binop ("+", Val 1, Val 2)) under env []
+evaluating Val 3 under env []
+  eval returned 3
+evaluating Binop ("+", Val 1, Val 2) under env []
+evaluating Val 1 under env []
+  eval returned 1
+evaluating Val 2 under env []
+  eval returned 2
+  eval returned 3
+  eval returned 1
+evaluating Ternop ("if",Var "x",Val 10,Val 20) under env [("x", {contents = Val 1;})]
+evaluating Var "x" under env [("x", {contents = Val 1;})]
+  eval returned 1
+evaluating Val 10 under env [("x", {contents = Val 1;})]
+  eval returned 10
+  eval returned 10
+  eval returned 10
+
+Value of let x=(3 eq (1+2)): if x 10 else 20 = 10
+
+***************************************** TEST 7 *******************************************************************
+Enter expression: let x=2:let y=x*x:y*y 
+parsing [] with lookahead Sym "let"
+parsing [Sym "let"] with lookahead Var "x"
+parsing [Var "x"; Sym "let"] with lookahead Sym "="
+parsing [Sym "="; Var "x"; Sym "let"] with lookahead Val 2
+parsing [Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Sym ":"
+parsing [Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Sym "let"
+parsing [Sym "let"; Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Var "y"
+parsing [Var "y"; Sym "let"; Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Sym "="
+parsing [Sym "="; Var "y"; Sym "let"; Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Var "x"
+parsing [Var "x"; Sym "="; Var "y"; Sym "let"; Sym ":"; Val 2; Sym "="; Var "x";
+ Sym "let"] with lookahead Sym "*"
+parsing [Sym "*"; Var "x"; Sym "="; Var "y"; Sym "let"; Sym ":"; Val 2; Sym "="; Var "x";
+ Sym "let"] with lookahead Var "x"
+parsing [Var "x"; Sym "*"; Var "x"; Sym "="; Var "y"; Sym "let"; Sym ":"; Val 2; Sym "=";
+ Var "x"; Sym "let"] with lookahead Sym ":"
+parsing [Binop ("*", Var "x", Var "x"); Sym "="; Var "y"; Sym "let"; Sym ":"; Val 2;
+ Sym "="; Var "x"; Sym "let"] with lookahead Sym ":"
+parsing [Sym ":"; Binop ("*", Var "x", Var "x"); Sym "="; Var "y"; Sym "let"; Sym ":";
+ Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Var "y"
+parsing [Var "y"; Sym ":"; Binop ("*", Var "x", Var "x"); Sym "="; Var "y"; Sym "let";
+ Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Sym "*"
+parsing [Sym "*"; Var "y"; Sym ":"; Binop ("*", Var "x", Var "x"); Sym "="; Var "y";
+ Sym "let"; Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead Var "y"
+parsing [Var "y"; Sym "*"; Var "y"; Sym ":"; Binop ("*", Var "x", Var "x"); Sym "=";
+ Var "y"; Sym "let"; Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead EOF
+parsing [Binop ("*", Var "y", Var "y"); Sym ":"; Binop ("*", Var "x", Var "x"); Sym "=";
+ Var "y"; Sym "let"; Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead EOF
+parsing [Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y"));
+ Sym ":"; Val 2; Sym "="; Var "x"; Sym "let"] with lookahead EOF
+parsing [Letexp
+   ("x",Val 2,
+    Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))] with lookahead EOF
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+  parse returned expression Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")))
+evaluating Letexp
+  ("x",Val 2,
+   Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y"))) under env []
+evaluating Val 2 under env []
+  eval returned 2
+evaluating Letexp ("y",Binop ("*", Var "x", Var "x"),Binop ("*", Var "y", Var "y")) under env [("x", {contents = Val 2;})]
+evaluating Binop ("*", Var "x", Var "x") under env [("x", {contents = Val 2;})]
+evaluating Var "x" under env [("x", {contents = Val 2;})]
+  eval returned 2
+evaluating Var "x" under env [("x", {contents = Val 2;})]
+  eval returned 2
+  eval returned 4
+evaluating Binop ("*", Var "y", Var "y") under env [("y", {contents = Val 4;}); ("x", {contents = Val 2;})]
+evaluating Var "y" under env [("y", {contents = Val 4;}); ("x", {contents = Val 2;})]
+  eval returned 4
+evaluating Var "y" under env [("y", {contents = Val 4;}); ("x", {contents = Val 2;})]
+  eval returned 4
+  eval returned 16
+  eval returned 16
+  eval returned 16
+
+Value of let x=2:let y=x*x:y*y  = 16

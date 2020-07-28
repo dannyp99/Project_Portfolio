@@ -1,0 +1,288 @@
+***************************************** TEST 1 *******************************************************************
+parsing [] with lookahead Sym "("
+parsing [Sym "("] with lookahead Val 3
+parsing [Val 3; Sym "("] with lookahead Sym "eq"
+parsing [Sym "eq"; Val 3; Sym "("] with lookahead Sym "("
+parsing [Sym "("; Sym "eq"; Val 3; Sym "("] with lookahead Val 1
+parsing [Val 1; Sym "("; Sym "eq"; Val 3; Sym "("] with lookahead Sym "+"
+parsing [Sym "+"; Val 1; Sym "("; Sym "eq"; Val 3; Sym "("] with lookahead Val 1
+parsing [Val 1; Sym "+"; Val 1; Sym "("; Sym "eq"; Val 3; Sym "("] with lookahead Sym "+"
+parsing [Binop ("+", Val 1, Val 1); Sym "("; Sym "eq"; Val 3; Sym "("] with lookahead Sym "+"
+parsing [Sym "+"; Binop ("+", Val 1, Val 1); Sym "("; Sym "eq"; Val 3; Sym "("] with lookahead Val 1
+parsing [Val 1; Sym "+"; Binop ("+", Val 1, Val 1); Sym "("; Sym "eq"; Val 3; Sym "("] with lookahead Sym ")"
+parsing [Binop ("+", Binop ("+", Val 1, Val 1), Val 1); Sym "("; Sym "eq"; Val 3;
+ Sym "("] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("+", Binop ("+", Val 1, Val 1), Val 1); Sym "("; Sym "eq";
+ Val 3; Sym "("] with lookahead Sym ")"
+parsing [Binop ("+", Binop ("+", Val 1, Val 1), Val 1); Sym "eq"; Val 3; Sym "("] with lookahead Sym ")"
+parsing [Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)); Sym "("] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1));
+ Sym "("] with lookahead EOF
+parsing [Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1))] with lookahead EOF
+compiling Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)) under symtab [] at line 0
+compiling Val 3 under symtab [] at line 0
+compiling Binop ("+", Binop ("+", Val 1, Val 1), Val 1) under symtab [] at line 1
+compiling Binop ("+", Val 1, Val 1) under symtab [] at line 1
+compiling Val 1 under symtab [] at line 1
+compiling Val 1 under symtab [] at line 2
+compiling Val 1 under symtab [] at line 7
+push 3
+push 1
+push 1
+pop bx
+pop ax
+add bx ax
+push ax
+push 1
+pop bx
+pop ax
+add bx ax
+push ax
+pop bx
+pop cx
+sub bx cx
+jnz 18
+push 1
+jnz 19
+push 0
+nop
+# compiled for: (3 eq (1+1+1))
+
+***************************************** TEST 2 *******************************************************************
+if (3 eq (1+1+1)) then 10 else 20 
+parsing [] with lookahead Sym "if"
+parsing [Sym "if"] with lookahead Sym "("
+parsing [Sym "("; Sym "if"] with lookahead Val 3
+parsing [Val 3; Sym "("; Sym "if"] with lookahead Sym "eq"
+parsing [Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "("
+parsing [Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Val 1
+parsing [Val 1; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "+"
+parsing [Sym "+"; Val 1; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Val 1
+parsing [Val 1; Sym "+"; Val 1; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "+"
+parsing [Binop ("+", Val 1, Val 1); Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "+"
+parsing [Sym "+"; Binop ("+", Val 1, Val 1); Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Val 1
+parsing [Val 1; Sym "+"; Binop ("+", Val 1, Val 1); Sym "("; Sym "eq"; Val 3; Sym "(";
+ Sym "if"] with lookahead Sym ")"
+parsing [Binop ("+", Binop ("+", Val 1, Val 1), Val 1); Sym "("; Sym "eq"; Val 3;
+ Sym "("; Sym "if"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("+", Binop ("+", Val 1, Val 1), Val 1); Sym "("; Sym "eq";
+ Val 3; Sym "("; Sym "if"] with lookahead Sym ")"
+parsing [Binop ("+", Binop ("+", Val 1, Val 1), Val 1); Sym "eq"; Val 3; Sym "(";
+ Sym "if"] with lookahead Sym ")"
+parsing [Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)); Sym "(";
+ Sym "if"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1));
+ Sym "("; Sym "if"] with lookahead Sym "then"
+parsing [Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)); Sym "if"] with lookahead Sym "then"
+parsing [Sym "then"; Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1));
+ Sym "if"] with lookahead Val 10
+parsing [Val 10; Sym "then";
+ Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)); Sym "if"] with lookahead Sym "else"
+parsing [Sym "else"; Val 10; Sym "then";
+ Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)); Sym "if"] with lookahead Val 20
+parsing [Val 20; Sym "else"; Val 10; Sym "then";
+ Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)); Sym "if"] with lookahead EOF
+parsing [Ternop
+   ("if",Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)),
+    Val 10,Val 20)] with lookahead EOF
+compiling Ternop
+  ("if",Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)),
+   Val 10,Val 20) under symtab [] at line 0
+compiling Binop ("eq", Val 3, Binop ("+", Binop ("+", Val 1, Val 1), Val 1)) under symtab [] at line 0
+compiling Val 3 under symtab [] at line 0
+compiling Binop ("+", Binop ("+", Val 1, Val 1), Val 1) under symtab [] at line 1
+compiling Binop ("+", Val 1, Val 1) under symtab [] at line 1
+compiling Val 1 under symtab [] at line 1
+compiling Val 1 under symtab [] at line 2
+compiling Val 1 under symtab [] at line 7
+compiling Val 10 under symtab [] at line 21
+compiling Val 20 under symtab [] at line 24
+push 3
+push 1
+push 1
+pop bx
+pop ax
+add bx ax
+push ax
+push 1
+pop bx
+pop ax
+add bx ax
+push ax
+pop bx
+pop cx
+sub bx cx
+jnz 18
+push 1
+jnz 19
+push 0
+pop cx
+jz 24
+push 10
+mov 0 cx
+jz 25
+push 20
+nop
+# compiled for: if (3 eq (1+1+1)) then 10 else 20
+
+***************************************** TEST 3 *******************************************************************
+if 0 if 1 10 else 20 else 30
+parsing [] with lookahead Sym "if"
+parsing [Sym "if"] with lookahead Val 0
+parsing [Val 0; Sym "if"] with lookahead Sym "if"
+parsing [Sym "if"; Val 0; Sym "if"] with lookahead Val 1
+parsing [Val 1; Sym "if"; Val 0; Sym "if"] with lookahead Val 10
+parsing [Val 10; Val 1; Sym "if"; Val 0; Sym "if"] with lookahead Sym "else"
+parsing [Sym "else"; Val 10; Val 1; Sym "if"; Val 0; Sym "if"] with lookahead Val 20
+parsing [Val 20; Sym "else"; Val 10; Val 1; Sym "if"; Val 0; Sym "if"] with lookahead Sym "else"
+parsing [Ternop ("if",Val 1,Val 10,Val 20); Val 0; Sym "if"] with lookahead Sym "else"
+parsing [Sym "else"; Ternop ("if",Val 1,Val 10,Val 20); Val 0; Sym "if"] with lookahead Val 30
+parsing [Val 30; Sym "else"; Ternop ("if",Val 1,Val 10,Val 20); Val 0; Sym "if"] with lookahead EOF
+parsing [Ternop ("if",Val 0,Ternop ("if",Val 1,Val 10,Val 20),Val 30)] with lookahead EOF
+compiling Ternop ("if",Val 0,Ternop ("if",Val 1,Val 10,Val 20),Val 30) under symtab [] at line 0
+compiling Val 0 under symtab [] at line 0
+compiling Ternop ("if",Val 1,Val 10,Val 20) under symtab [] at line 3
+compiling Val 1 under symtab [] at line 3
+compiling Val 10 under symtab [] at line 6
+compiling Val 20 under symtab [] at line 9
+compiling Val 30 under symtab [] at line 11
+push 0
+pop cx
+jz 11
+push 1
+pop cx
+jz 9
+push 10
+mov 0 cx
+jz 10
+push 20
+mov 0 cx
+jz 12
+push 30
+nop
+# compiled for: if 0 if 1 10 else 20 else 30
+***************************************** TEST 4 *******************************************************************
+if (3 eq (if (2 lt 3) 1 else 3)) 20 else 2*20
+parsing [] with lookahead Sym "if"
+parsing [Sym "if"] with lookahead Sym "("
+parsing [Sym "("; Sym "if"] with lookahead Val 3
+parsing [Val 3; Sym "("; Sym "if"] with lookahead Sym "eq"
+parsing [Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "("
+parsing [Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "if"
+parsing [Sym "if"; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "("
+parsing [Sym "("; Sym "if"; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Val 2
+parsing [Val 2; Sym "("; Sym "if"; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym "lt"
+parsing [Sym "lt"; Val 2; Sym "("; Sym "if"; Sym "("; Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Val 3
+parsing [Val 3; Sym "lt"; Val 2; Sym "("; Sym "if"; Sym "("; Sym "eq"; Val 3; Sym "(";
+ Sym "if"] with lookahead Sym ")"
+parsing [Binop ("lt", Val 2, Val 3); Sym "("; Sym "if"; Sym "("; Sym "eq"; Val 3;
+ Sym "("; Sym "if"] with lookahead Sym ")"
+parsing [Sym ")"; Binop ("lt", Val 2, Val 3); Sym "("; Sym "if"; Sym "("; Sym "eq";
+ Val 3; Sym "("; Sym "if"] with lookahead Val 1
+parsing [Binop ("lt", Val 2, Val 3); Sym "if"; Sym "("; Sym "eq"; Val 3; Sym "(";
+ Sym "if"] with lookahead Val 1
+parsing [Val 1; Binop ("lt", Val 2, Val 3); Sym "if"; Sym "("; Sym "eq"; Val 3; Sym "(";
+ Sym "if"] with lookahead Sym "else"
+parsing [Sym "else"; Val 1; Binop ("lt", Val 2, Val 3); Sym "if"; Sym "("; Sym "eq";
+ Val 3; Sym "("; Sym "if"] with lookahead Val 3
+parsing [Val 3; Sym "else"; Val 1; Binop ("lt", Val 2, Val 3); Sym "if"; Sym "(";
+ Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym ")"
+parsing [Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3); Sym "("; Sym "eq"; Val 3;
+ Sym "("; Sym "if"] with lookahead Sym ")"
+parsing [Sym ")"; Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3); Sym "(";
+ Sym "eq"; Val 3; Sym "("; Sym "if"] with lookahead Sym ")"
+parsing [Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3); Sym "eq"; Val 3; Sym "(";
+ Sym "if"] with lookahead Sym ")"
+parsing [Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3));
+ Sym "("; Sym "if"] with lookahead Sym ")"
+parsing [Sym ")";
+ Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3));
+ Sym "("; Sym "if"] with lookahead Val 20
+parsing [Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3));
+ Sym "if"] with lookahead Val 20
+parsing [Val 20;
+ Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3));
+ Sym "if"] with lookahead Sym "else"
+parsing [Sym "else"; Val 20;
+ Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3));
+ Sym "if"] with lookahead Val 2
+parsing [Val 2; Sym "else"; Val 20;
+ Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3));
+ Sym "if"] with lookahead Sym "*"
+parsing [Ternop
+   ("if",
+    Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3)),
+    Val 20,Val 2)] with lookahead Sym "*"
+parsing [Sym "*";
+ Ternop
+   ("if",
+    Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3)),
+    Val 20,Val 2)] with lookahead Val 20
+parsing [Val 20; Sym "*";
+ Ternop
+   ("if",
+    Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3)),
+    Val 20,Val 2)] with lookahead EOF
+parsing [Binop
+   ("*",
+    Ternop
+      ("if",
+       Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3)),
+       Val 20,Val 2), Val 20)] with lookahead EOF
+compiling Binop
+  ("*",
+   Ternop
+     ("if",
+      Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3)),
+      Val 20,Val 2), Val 20) under symtab [] at line 0
+compiling Ternop
+  ("if",
+   Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3)),
+   Val 20,Val 2) under symtab [] at line 0
+compiling Binop ("eq", Val 3, Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3)) under symtab [] at line 0
+compiling Val 3 under symtab [] at line 0
+compiling Ternop ("if",Binop ("lt", Val 2, Val 3),Val 1,Val 3) under symtab [] at line 1
+compiling Binop ("lt", Val 2, Val 3) under symtab [] at line 1
+compiling Val 2 under symtab [] at line 1
+compiling Val 3 under symtab [] at line 2
+compiling Val 1 under symtab [] at line 12
+compiling Val 3 under symtab [] at line 15
+compiling Val 20 under symtab [] at line 24
+compiling Val 2 under symtab [] at line 27
+compiling Val 20 under symtab [] at line 27
+push 3
+push 2
+push 3
+pop bx
+pop cx
+sub bx cx
+jnz 9
+push 1
+jnz 10
+push 0
+pop cx
+jz 15
+push 1
+mov 0 cx
+jz 16
+push 3
+pop bx
+pop cx
+sub bx cx
+jnz 21
+push 1
+jnz 22
+push 0
+pop cx
+jz 27
+push 20
+mov 0 cx
+jz 28
+push 2
+push 20
+pop bx
+pop ax
+imul bx ax
+push ax
+nop
+# compiled for:  if (3 eq (if (2 lt 3) 1 else 3)) 20 else 2*20

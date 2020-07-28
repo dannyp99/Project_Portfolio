@@ -1,0 +1,29 @@
+# AM7B (version 7E3) program to find largest value in RAM.[0] to RAM[9]
+
+# Use bx to address memory, ax as accumulator (current largest value).
+# First put some test values in memory, instruction 0 is on line 6
+push 3
+push 1
+push 4
+push 8
+push 0
+push 5
+push 6
+push 9
+push 2
+push 7
+mov 0 bx 
+mov [bx] ax
+# Next line is instruction 12, start of loop
+add 1 bx
+mov bx cx
+sub 10 cx
+jz 22
+mov [bx] cx
+sub ax cx
+jn 12
+mov [bx] ax
+mov 0 cx
+jz 12
+# END, put final result on stack, last line is instruction 22
+push ax
