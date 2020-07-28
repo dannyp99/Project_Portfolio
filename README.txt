@@ -6,6 +6,7 @@ Automation_Things
 NYUGameJam
 	- This is a 48 hour Unity project I did for the global game jam back in January 2020
 	- I worked on level design and programming  colliders. All assets were self made from character, to music to tiles, etc...
+
 Programming_Languages
 
 	- For my favorite class I have taken we had to projects that we had to do.
@@ -20,3 +21,7 @@ Programming_Languages
 	as8:
 		fsharpc compilier.fs -r compilatorbase.dll
 		mono compilier.exe compile - will compile code entered
+RemindMeNotes
+	- This is my Final Project for my Mobile Development Course. I chose the concept myself and thought it was useful for my personal needs.
+	  I find that sometimes while taking notes I want to make a reminder for myself about a quiz or test that a professor might quickly mention.
+	  Maybe I remember that I need to call someone right after class and I want to just quickly make a reminder without having to leave the app entirely.
