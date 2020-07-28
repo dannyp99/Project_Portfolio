@@ -1,0 +1,3 @@
+[submodule "RemindMeNotes/NYUGameJam"]
+	path = RemindMeNotes/NYUGameJam
+	url = https://github.com/ev3rest/NYUGameJam
