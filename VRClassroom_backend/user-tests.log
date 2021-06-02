@@ -1,0 +1,70 @@
+2021.03.22, 21:48:18.0757 UTC -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiaWF0IjoxNjE2NDQ5Njk4LCJleHAiOjE2MTY1MzYwOTh9.4MH33ZPd6Ng7ZGZZBCBjeEji_VZEEf9CUOgRfnLZzts
+2021.03.22, 21:48:18.0895 UTC -> [object Object]
+2021.03.22, 21:48:18.0899 UTC -> Authentication Error
+2021.03.22, 21:48:19.0009 UTC -> 
+2021.03.22, 21:48:19.0015 UTC -> Authentication Error
+2021.03.22, 21:48:19.0063 UTC -> 
+2021.03.22, 21:48:19.0075 UTC -> Authentication Error
+2021.03.22, 21:48:19.0213 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$sIhnr.TBgkG.on2jvT1bru/uVJdGf9zu4p4Lz4t3iVUIHX7IDN5mW","display_name":"updatedTestCaseUser"}
+2021.03.22, 21:48:19.0218 UTC -> Authentication Error
+2021.03.22, 21:48:19.0517 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$4l5B3mA1T/qYgTPZJKGLt.1OKNbaSkAe/6yVV1CtJKvl7yIqo7y76","display_name":"updatedTestCaseUser"}
+2021.03.22, 21:48:19.0520 UTC -> Authentication Error
+2021.03.22, 21:48:19.0551 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.22, 21:48:19.0621 UTC -> Authentication Error
+2021.03.22, 21:48:19.0681 UTC -> [object Object],[object Object],[object Object],[object Object]
+2021.03.22, 21:48:19.0685 UTC -> Authentication Error
+2021.03.22, 21:48:19.0708 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.22, 21:48:42.0158 UTC -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiaWF0IjoxNjE2NDQ5NzIyLCJleHAiOjE2MTY1MzYxMjJ9.UQCfCfIAPBHUvoQ9zhDNx0cbRH6mICYv_GXgEHzuaKM
+2021.03.22, 21:48:42.0324 UTC -> [object Object]
+2021.03.22, 21:48:42.0327 UTC -> Authentication Error
+2021.03.22, 21:48:42.0438 UTC -> 
+2021.03.22, 21:48:42.0444 UTC -> Authentication Error
+2021.03.22, 21:48:42.0505 UTC -> 
+2021.03.22, 21:48:42.0514 UTC -> Authentication Error
+2021.03.22, 21:48:42.0632 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$4l5B3mA1T/qYgTPZJKGLt.1OKNbaSkAe/6yVV1CtJKvl7yIqo7y76","display_name":"updatedTestCaseUser"}
+2021.03.22, 21:48:42.0639 UTC -> Authentication Error
+2021.03.22, 21:48:42.0955 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$oOYUToTe4EvZYKUkr4GhtO2TwwgPDW9eO8Ex6Q4N7vLpGx0.B2oD6","display_name":"updatedTestCaseUser"}
+2021.03.22, 21:48:42.0959 UTC -> Authentication Error
+2021.03.22, 21:48:42.0991 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.22, 21:48:43.0070 UTC -> Authentication Error
+2021.03.22, 21:48:43.0120 UTC -> [object Object],[object Object],[object Object],[object Object]
+2021.03.22, 21:48:43.0123 UTC -> Authentication Error
+2021.03.22, 21:48:43.0154 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.22, 21:54:45.0706 UTC -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiaWF0IjoxNjE2NDUwMDg1LCJleHAiOjE2MTY1MzY0ODV9.GRpLb29Fhe5Qzu3Q-CVFo_htrzPWKck1cAd9Ygtmf1E
+2021.03.22, 21:54:45.0834 UTC -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNCwiaWF0IjoxNjE2NDUwMDg1LCJleHAiOjE2MTY1MzY0ODV9.jd5bI8ZfXPsyC3XHsr47iRg_HwDF98rglZXF2OycnrE
+2021.03.22, 21:54:45.0927 UTC -> [object Object]
+2021.03.22, 21:54:45.0933 UTC -> Authentication Error
+2021.03.22, 21:54:45.0995 UTC -> 
+2021.03.22, 21:54:45.0998 UTC -> Authentication Error
+2021.03.22, 21:54:46.0043 UTC -> 
+2021.03.22, 21:54:46.0048 UTC -> Authentication Error
+2021.03.22, 21:54:46.0149 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$oOYUToTe4EvZYKUkr4GhtO2TwwgPDW9eO8Ex6Q4N7vLpGx0.B2oD6","display_name":"updatedTestCaseUser"}
+2021.03.22, 21:54:46.0152 UTC -> Authentication Error
+2021.03.22, 21:54:46.0431 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$lHiF4lAcNBeYFGNd1gMCpOrDk6OR0s5KAresOKOfFGcOVghO1pwee","display_name":"updatedTestCaseUser"}
+2021.03.22, 21:54:46.0436 UTC -> Authentication Error
+2021.03.22, 21:54:46.0487 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.22, 21:54:46.0670 UTC -> [object Object]
+2021.03.22, 21:54:46.0676 UTC -> Authentication Error
+2021.03.22, 21:54:46.0728 UTC -> [object Object],[object Object],[object Object],[object Object],[object Object]
+2021.03.22, 21:54:46.0731 UTC -> Authentication Error
+2021.03.22, 21:54:46.0753 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.22, 21:54:46.0839 UTC -> Successfully Deleted
+2021.03.24, 22:39:41.0694 UTC -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiaWF0IjoxNjE2NjI1NTgxLCJleHAiOjE2MTY3MTE5ODF9.L5Dpv4TVpc9IrWSGgPDthCOobtyQl4r53xJVBnxs09A
+2021.03.24, 22:39:41.0843 UTC -> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNCwiaWF0IjoxNjE2NjI1NTgxLCJleHAiOjE2MTY3MTE5ODF9.4KU95Ivr8Wwm9eGnn6GRDTMPyr7dhCnqros4C37LuBg
+2021.03.24, 22:39:41.0960 UTC -> [object Object]
+2021.03.24, 22:39:41.0965 UTC -> Authentication Error
+2021.03.24, 22:39:42.0038 UTC -> 
+2021.03.24, 22:39:42.0041 UTC -> Authentication Error
+2021.03.24, 22:39:42.0106 UTC -> 
+2021.03.24, 22:39:42.0114 UTC -> Authentication Error
+2021.03.24, 22:39:42.0213 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$lHiF4lAcNBeYFGNd1gMCpOrDk6OR0s5KAresOKOfFGcOVghO1pwee","display_name":"updatedTestCaseUser"}
+2021.03.24, 22:39:42.0217 UTC -> Authentication Error
+2021.03.24, 22:39:42.0532 UTC -> {"id":13,"role":"Test","username":"sampleUser","email":"test@api.com","password_hash":"$2b$10$NPN45S6PfC5CEFACJjrBou09gkROhyfg07Hef6A8Dr8o9aHidlmSe","display_name":"updatedTestCaseUser"}
+2021.03.24, 22:39:42.0536 UTC -> Authentication Error
+2021.03.24, 22:39:42.0578 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.24, 22:39:42.0776 UTC -> [object Object]
+2021.03.24, 22:39:42.0790 UTC -> Authentication Error
+2021.03.24, 22:39:42.0879 UTC -> [object Object],[object Object],[object Object],[object Object],[object Object]
+2021.03.24, 22:39:42.0882 UTC -> Authentication Error
+2021.03.24, 22:39:42.0945 UTC -> {"message":"Access Denied - You don't have permission to: access admin"}
+2021.03.24, 22:39:43.0068 UTC -> Successfully Deleted

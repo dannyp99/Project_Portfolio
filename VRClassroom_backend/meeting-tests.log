@@ -1,0 +1,56 @@
+2021.03.22, 21:48:18.0791 UTC -> Authentication Error
+2021.03.22, 21:48:18.0889 UTC -> [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2021.03.22, 21:48:18.0893 UTC -> Authentication Error
+2021.03.22, 21:48:19.0091 UTC -> [object Object]
+2021.03.22, 21:48:19.0094 UTC -> Authentication Error
+2021.03.22, 21:48:19.0189 UTC -> [object Object]
+2021.03.22, 21:48:19.0193 UTC -> Authentication Error
+2021.03.22, 21:48:19.0215 UTC -> {"message":"Access Denied - You don't have permission to: access attendees"}
+2021.03.22, 21:48:19.0230 UTC -> Authentication Error
+2021.03.22, 21:48:19.0278 UTC -> [{"id":1,"day":2,"start_time":"11","end_time":"2"}]
+2021.03.22, 21:48:19.0282 UTC -> Authentication Error
+2021.03.22, 21:48:19.0387 UTC -> [object Object]
+2021.03.22, 21:48:19.0391 UTC -> Authentication Error
+2021.03.22, 21:48:19.0531 UTC -> Successfully Deleted
+2021.03.22, 21:48:42.0169 UTC -> Authentication Error
+2021.03.22, 21:48:42.0294 UTC -> [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2021.03.22, 21:48:42.0298 UTC -> Authentication Error
+2021.03.22, 21:48:42.0509 UTC -> [object Object]
+2021.03.22, 21:48:42.0521 UTC -> Authentication Error
+2021.03.22, 21:48:42.0574 UTC -> [object Object]
+2021.03.22, 21:48:42.0579 UTC -> Authentication Error
+2021.03.22, 21:48:42.0606 UTC -> {"message":"Access Denied - You don't have permission to: access attendees"}
+2021.03.22, 21:48:42.0608 UTC -> Authentication Error
+2021.03.22, 21:48:42.0678 UTC -> [{"id":1,"day":2,"start_time":"11","end_time":"2"}]
+2021.03.22, 21:48:42.0682 UTC -> Authentication Error
+2021.03.22, 21:48:42.0795 UTC -> [object Object]
+2021.03.22, 21:48:42.0798 UTC -> Authentication Error
+2021.03.22, 21:48:42.0958 UTC -> Successfully Deleted
+2021.03.22, 21:54:45.0768 UTC -> Authentication Error
+2021.03.22, 21:54:45.0853 UTC -> [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2021.03.22, 21:54:45.0857 UTC -> Authentication Error
+2021.03.22, 21:54:46.0030 UTC -> [object Object]
+2021.03.22, 21:54:46.0033 UTC -> Authentication Error
+2021.03.22, 21:54:46.0083 UTC -> [object Object]
+2021.03.22, 21:54:46.0088 UTC -> Authentication Error
+2021.03.22, 21:54:46.0123 UTC -> {"message":"Access Denied - You don't have permission to: access attendees"}
+2021.03.22, 21:54:46.0126 UTC -> Authentication Error
+2021.03.22, 21:54:46.0174 UTC -> [{"id":1,"day":2,"start_time":"11","end_time":"2"}]
+2021.03.22, 21:54:46.0182 UTC -> Authentication Error
+2021.03.22, 21:54:46.0261 UTC -> [object Object]
+2021.03.22, 21:54:46.0266 UTC -> Authentication Error
+2021.03.22, 21:54:46.0419 UTC -> Successfully Deleted
+2021.03.24, 22:39:41.0661 UTC -> Authentication Error
+2021.03.24, 22:39:41.0779 UTC -> [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2021.03.24, 22:39:41.0795 UTC -> Authentication Error
+2021.03.24, 22:39:42.0057 UTC -> [object Object]
+2021.03.24, 22:39:42.0060 UTC -> Authentication Error
+2021.03.24, 22:39:42.0120 UTC -> [object Object]
+2021.03.24, 22:39:42.0123 UTC -> Authentication Error
+2021.03.24, 22:39:42.0149 UTC -> {"message":"Access Denied - You don't have permission to: access attendees"}
+2021.03.24, 22:39:42.0153 UTC -> Authentication Error
+2021.03.24, 22:39:42.0194 UTC -> [{"id":1,"day":2,"start_time":"11","end_time":"2"}]
+2021.03.24, 22:39:42.0200 UTC -> Authentication Error
+2021.03.24, 22:39:42.0334 UTC -> [object Object]
+2021.03.24, 22:39:42.0337 UTC -> Authentication Error
+2021.03.24, 22:39:42.0520 UTC -> Successfully Deleted
