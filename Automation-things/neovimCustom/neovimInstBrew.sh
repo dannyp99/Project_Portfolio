@@ -1,22 +1,22 @@
 #!/bin/bash
-if [ ! -f "/usr/local/bin/nvim" ]; then
+if [[ ! -f "/usr/local/bin/nvim" ]]; then
 	brew install neovim
 	echo "neovim installed"
 else
 	echo "neovim already installed"
 fi
-if [ ! -f "/usr/local/bin/wget" ]; then
+if [[ ! -f "/usr/local/bin/wget" ]]; then
 	brew install wget
 	echo "wget installed"
 else
 	echo "wget already installed"
 fi
 
-if [ ! -d "$HOME/.config/nvim/colors" ]; then
+if [[ ! -d "$HOME/.config/nvim/colors" ]]; then
 	mkdir -p ~/.config/nvim/colors
 fi
 
-if [ ! -f "$HOME/.config/nvim/colors/molokai.vim" ]; then 
+if [[ ! -f "$HOME/.config/nvim/colors/molokai.vim" ]]; then
 	wget https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 	mv molokai.vim ~/.config/nvim/colors
 	echo "configuring neovim theme..."
@@ -24,7 +24,7 @@ else
 	echo "color them already set"
 fi
 
-if [ ! -d "$HOME/.config/nvim/pack/vendor/start/nerdtree" ]; then
+if [[ ! -d "$HOME/.config/nvim/pack/vendor/start/nerdtree" ]]; then
 	echo "configuring NERDTree..."
 	git clone https://github.com/preservim/nerdtree.git ~/.config/nvim/pack/vendor/start/nerdtree
 	cd ~/.config/nvim

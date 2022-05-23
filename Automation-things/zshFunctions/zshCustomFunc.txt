@@ -1,0 +1,94 @@
+
+alias l="ls"
+alias gits="git status"
+alias gitd="git diff"
+alias -g - --="cd -"
+alias gitlogger="git log --branches --remotes --tags --graph --oneline --decorate"
+
+function mkcd(){
+	mkdir "$1" && cd "$1"
+}
+
+function mvcd(){
+	mv "$1" "$2" && cd "$2"
+}
+
+function up(){
+	back="cd "
+	if [[ $1 = "" ]]; then
+		back+="../"
+	else
+		for ((i=0; i < $1; i++)) do
+			back+="../"	
+		done
+	fi
+	eval "$back"
+}
+
+function almightypush(){
+	if [[ "$#" -eq 1 ]] && [[ $1 != "" ]];then
+		git add -A
+		git commit -m "$1"
+		git push origin HEAD
+		if [[ ! -f "$HOME/Downloads/push.mp4" ]];then
+			youtube-dl "https://www.youtube.com/watch?v=aYAhC8zn42E" -o '$HOME/Downloads/push.%(ext)s'
+		fi
+		mpv $HOME/Downloads/push.mp4 --length=3 --really-quiet
+	else
+		echo "You need to pass a commit message in quotes \"\" as one argument"
+	fi
+}
+
+function gitbrancher(){
+	length=0
+	typeset -l bN #zsh to enforce lowercase on all extension of bN
+	bN=""
+	if [[ $# -gt 1 ]]; then 
+		length=${#2}
+		bN="$2"
+	elif [[ $# -eq 1 ]]; then
+		length=${#1}
+		bN="$1"
+	else
+		echo "Please pass a string branch name ex. \" test branch\""
+		return
+	fi
+	for ((i=1; i < length; i++)) do
+		if [[ "${bN:$i:1}" == " " && ("${bN:$i+1:1}" == "-" || "${bN:$i-1:1}" == "-") ]];then
+			bN=${bN:0:$i}""${bN:$i+1}
+		elif [[ "${bN:$i:1}" == " " ]];then
+			bN=${bN:0:$i}"-"${bN:$i+1}		
+		fi
+	done
+	#bN=`echo "$bN" | sed 's/./\L&/g'`
+	while [ ! $# -eq 0 ]
+	do
+		case "$1" in
+			--test | -t)
+				echo "$bN"
+				return
+				exit
+				;;
+		esac
+		shift
+	done
+	git checkout -b "$bN"
+}
+
+function kiryu(){
+	ret=$?
+	if [[ $ret -eq 127 ]] || [[ $ret -eq 1 ]];then
+		if [[ ! -f "$HOME/Downloads/kiryu.mp4" ]];then
+			youtube-dl "https://www.youtube.com/watch?v=YcAHHKY3Y0I" -o '$HOME/Downloads/kiryu.%(ext)s'
+		fi
+		mpv $HOME/Downloads/kiryu.mp4 --length=2 --really-quiet
+	else 
+		:
+	fi
+}
+function logisim(){
+	java -jar $HOME/Downloads/logisim-evolution.jar
+}
+#use unset PROMPT_COMMAND to undo function call.
+#PROMPT_COMMAND="kiryu"
+#precmd() { eval "$PROMPT_COMMAND" }

@@ -12,7 +12,11 @@ function freset
 end
 
 function mkcd
-	mkdir "$argv[1]"; cd "$argv[1]"
+	mkdir "$argv[1]" && cd "$argv[1]"
+end
+
+function mvcd
+	mv "$argv[1]" "$argv[2]" && cd "$argv[2]"
 end
 
 function append --no-scope-shadowing
@@ -41,7 +45,11 @@ function almightypush
 		git add -A
 		git commit -m "$argv[1]"
 		git push origin HEAD
-		open "https://www.youtube.com/watch?v=aYAhC8zn42E"
+		if test -e $HOME/Downloads/push.mp4
+			mpv $HOME/Downloads/push.mp4 --really-quiet --length=3
+		else
+			open "https://www.youtube.com/watch?v=aYAhC8zn42E"
+		end
 	else
 		echo "You need to pass a commit message in quotes \"\" as one argument"
 	end
@@ -56,12 +64,17 @@ function robi
 end
 
 function kiryu --on-event fish_postexec
-	if test $status = 127
+	if test $status -ne 0
 		if not test -e $HOME/Downloads/kiryu.mp4
 			youtube-dl "https://www.youtube.com/watch?v=YcAHHKY3Y0I" -o '$HOME/Downloads/kiryu.%(ext)s'
 		end
-		mpv $HOME/Downloads/kiryu.mp4 --length=2
+		mpv $HOME/Downloads/kiryu.mp4 --length=2 --really-quiet
 	else
 		:
 	end
 end
+
+function logisim
+	java -jar $HOME/Downloads/logisim-evolution.jar
+end
+
