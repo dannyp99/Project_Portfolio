@@ -477,6 +477,7 @@
     "@sinonjs/commons" "^1.7.0"
 
 "@szmarczak/http-timer@^1.1.2", depd@^1.1.2, depd@~1.1.2:
+  name depd
   version "1.1.2"
   resolved "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz"
 
@@ -3555,8 +3556,8 @@ qs@^6.4.0, qs@^6.5.2, qs@^6.9.4:
   resolved "https://registry.npmjs.org/qs/-/qs-6.9.4.tgz"
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz"
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
 
 raw-body@^2.2.0, raw-body@^2.3.3:
   version "2.4.1"
